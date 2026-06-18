@@ -1,0 +1,21 @@
+h1{
+    color:blue;
+    text-align:center;
+}
+p{
+    color:green;
+    font-size:18px;
+}
+h3{
+    color:red;
+    font-size:24px;
+}
+h4{
+    color:orange;
+    font-size:22px;
+}
+ul{
+    list-style-type:circle;
+    color:rgb(182, 23, 174);
+    font-size:20px;
+}
