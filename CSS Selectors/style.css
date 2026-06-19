@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1
+{
+    color:blue;
+    text-align:center;
+
+}
+p{
+    color:hotpink;
+    font-size:22px;
+    text-align:center;
+
+ }
+h2{
+    color:rgb(21, 204, 51);
+    font-size:24px;
+}
+ol{
+
+    color:rgb(182, 23, 174);
+    font-size:20px;
+}
+h3{
+    color:blueviolet;
+
+}
+body
+{
+    background-image:url("https://img.magnific.com/free-photo/high-angle-view-laptop-stationeries-blue-background_23-2147880456.jpg"); 
+       background-size:cover;
+}
+.course-list{
+    color:rgb(134, 22, 69);
+    font-size:20px;
+}
+
