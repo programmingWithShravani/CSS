@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f8ff;
+}
+
+/* Header */
+
+#header{
+    background:linear-gradient(to right,#0f172a,#2563eb);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+#header h1{
+    font-size:45px;
+}
+
+#header p{
+    margin-top:10px;
+}
+
+/* Navigation */
+
+nav{
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    text-align:center;
+}
+
+nav ul li{
+    display:inline-block;
+}
+
+nav ul li a{
+    display:block;
+    padding:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    background:#2563eb;
+    transition:0.5s;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    color:white;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.hero h2::after{
+    content:" 🚀";
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e40af;
+    transform:scale(1.05);
+    transition:0.4s;
+}
+
+/* Statistics */
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    background:#2563eb;
+    color:white;
+    padding:40px;
+}
+
+.stat-box{
+    text-align:center;
+}
+
+.stat-box h2{
+    font-size:35px;
+}
+
+/* Courses */
+
+.courses{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.course-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.course-card{
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.course-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.course-card h3{
+    margin:15px;
+}
+
+.course-card p{
+    margin:15px;
+}
+
+.course-card button{
+    margin-bottom:20px;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+    transition:0.5s;
+}
+
+/* Features */
+
+.features{
+    background:#e0f2fe;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.feature-box{
+    width:250px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feature-box i{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+/* Reviews */
+
+.testimonial{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.review{
+    width:70%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-left:6px solid #2563eb;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+
+.contact{
+    padding:60px 20px;
+    background:#eaf3ff;
+    text-align:center;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    border:2px solid #2563eb;
+    outline:none;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.social i{
+    font-size:25px;
+    margin:10px;
+    cursor:pointer;
+}
+
+.social i:hover{
+    color:#60a5fa;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h2{
+    font-size:30px;
+}
+
+.course-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.feature-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.stats{
+    flex-direction:column;
+    gap:20px;
+}
+}
