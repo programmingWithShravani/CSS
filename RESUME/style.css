@@ -3,17 +3,43 @@
     padding:0;
     box-sizing:border-box;
     font-family: Arial, sans-serif;
+    line-height: 1.8;
 }
 
 body{
     background:#ecf0f0;
     padding:30px;
 }
-
+.header{
+    flex: auto;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+.photo{
+    margin-left: 20px;
+}
+.photo img{
+    width:100px;
+    height:120px;
+    border:2px solid #acc6e2;
+    border-radius:10px;
+    object-fit:cover;
+}
 .resume{
     max-width:900px;
     margin:auto;
-    background-image:url(/RESUME/images.jpg);
+    background-image:url(images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+mark{
+    background-color:#ffd700;
+    padding:5px 12px;
+    border-radius:5px;
     
 }
 
@@ -24,12 +50,22 @@ header{
 
 header h1{
     color:#1e3a8a;
-    margin-bottom:10px;
+
 }
 
 section{
     margin-bottom:20px;
+    padding: 10px;
 }
+.heading{
+    display:inline-block;
+    background-color:#ffd700;
+    color:black;
+    padding:5px 12px;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
 
 h2{
     color:#2563eb;
@@ -37,12 +73,13 @@ h2{
 }
 
 hr{
-    border:1px solid #d1d5db;
+    border:1px solid #789ace;
     margin-bottom:10px;
 }
 
 ul{
     margin-left:20px;
+    line-height:1.8;
 }
 
 table{
@@ -56,7 +93,7 @@ table, th, td{
 }
 
 th{
-    background:#2563eb;
+    background:#5fb2d8;
     color:white;
 }
 
@@ -71,20 +108,13 @@ th, td{
     border-left:5px solid #2563eb;
 }
 
-.project{
-    background:#12bd3d;
-    padding:10px;
-    margin-top:10px;
-    border-left:5px solid #2563eb;
-}
-
 .footer{
     display:flex;
     justify-content:space-between;
-    margin-top:40px;
+    margin-top:20px;
     text-align:center;
 }
 
 .footer div{
-    width:30%;
+    width:20%;
 }
